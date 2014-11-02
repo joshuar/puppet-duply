@@ -108,7 +108,7 @@ define duply::profile (
         } else {
           shellvar { "duply_${name}_GPG_PW":
             ensure   => 'present',
-            target   => "/etc/duply/${name}/conf"
+            target   => "/etc/duply/${name}/conf",
             variable => 'GPG_PW',
             value    => $gpg_enc_pass,
           }
