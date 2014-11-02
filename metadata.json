@@ -1,0 +1,18 @@
+{
+    "name": "joshuar-duply",
+    "version": "0.1.0",
+    "source": "https://github.com/joshuar/puppet-duply",
+    "author": "Joshua Rich",
+    "license": "Licensed under (Apache 2.0)",
+    "summary": "A module for duply",
+    "project_page": "(https://github.com/joshuar/duply-vnstat)",
+    "dependencies": [
+        { "name": "puppetlabs/stdlib", "version_requirement": ">=4.3.2" },
+        { "name": "domcleal-augeasproviders", "version_requirement": ">=1.2.0" }
+    ],
+    "operatingsystem_support": [
+        { "operatingsystem": "Fedora", "operatingsystemrelease": [ "20" ] },
+        { "operatingsystem": "RedHat", "operatingsystemrelease": [ "7.0" ] },
+        { "operatingsystem": "CentOS", "operatingsystemrelease": [ "7.0" ] }
+    ]
+}
