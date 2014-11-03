@@ -1,5 +1,5 @@
-define duply::command {
-  $ensure,
+define duply::command (
+  $ensure = 'present',
   $profile,
   $cron_weekday,
   $cron_hour,
