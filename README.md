@@ -59,6 +59,8 @@ and the underlying workhorse *duplicity* for details on the format.
 
  * **duply::profile**: creates and configures a duply profile and sets
    up a cron job to schedule the profile to be run by duply.
+ * **duply::command**: creates a cron job to run a specific duply
+   command against a profile.
 
 #### duply::profile Parameters
 
@@ -90,7 +92,7 @@ and the underlying workhorse *duplicity* for details on the format.
   megabytes.  Defaults to 25 (i.e., 25 MB).
  * **verbosity**: verbosity of output of duply commands.  Really only
   useful if you have configured your cron output to go somewhere
-  useful.  Defaults to 5.
+  useful.  Defaults to 1.
  * **temp_dir**: temporary file space. Should be at least the size of
  the biggest file in backup for a successful restoration
  process. Defaults to `/tmp`.
@@ -106,6 +108,15 @@ and the underlying workhorse *duplicity* for details on the format.
  * **cron_hour**: hour for main duply profile backup.  Defaults to 1.
  * **cron_minute**: minute for main duply profile backup. Defaults to
    10.
+
+#### duply::profile Parameters
+
+ * **name**: name of the command.  This should be a valid command
+ (TODO: validate the command name).
+ * **ensure**: whether to install or remove this command.
+ * **cron_weekday**: weekday for cron job.
+ * **cron_hour**: hour for main duply profile backup.
+ * **cron_minute**: minute for main duply profile backup.
 
 ## Compatibility
 

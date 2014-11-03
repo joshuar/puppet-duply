@@ -14,7 +14,7 @@ define duply::profile (
   $max_full_with_incrs = undef,
   $max_full_age = undef,
   $volsize = undef,
-  $verbosity = 5,
+  $verbosity = 1,
   $temp_dir = undef,
   $arch_dir = undef,
   $dupl_params = undef,
