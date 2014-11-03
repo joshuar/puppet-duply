@@ -1,6 +1,7 @@
 define duply::command (
   $ensure = 'present',
   $profile,
+  $extra_options,
   $cron_weekday,
   $cron_hour,
   $cron_minute,
@@ -18,7 +19,7 @@ define duply::command (
     # Set up a cron job to run the command
     cron { "duply_${profile}_${name}":
       ensure  => $ensure,
-      command => "duply ${profile} ${name}",
+      command => "duply ${profile} ${name} ${extra_options}",
       hour    => $cron_hour,
       minute  => $cron_minute,
       weekday => $cron_weekday,

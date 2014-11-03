@@ -252,6 +252,7 @@ define duply::profile (
           ensure  => 'absent',
           recurse => true,
           purge   => true,
+          force   => true,
         }
 
         cron { "duply_${name}":
