@@ -109,14 +109,11 @@ and the underlying workhorse *duplicity* for details on the format.
  * **cron_minute**: minute for main duply profile backup. Defaults to
    10.
 
-#### duply::command Parameters
+#### duply::profile Parameters
 
  * **name**: name of the command.  This should be a valid command
  (TODO: validate the command name).
  * **ensure**: whether to install or remove this command.
- * **profile**: the profile to which this command will apply.
- * **extra_options**: any extra options to pass to the command (e.g.,
-   `--force`).
  * **cron_weekday**: weekday for cron job.
  * **cron_hour**: hour for main duply profile backup.
  * **cron_minute**: minute for main duply profile backup.
